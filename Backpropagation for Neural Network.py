@@ -67,7 +67,7 @@ class NN():
         
         return self.x2_sigmoid
     
-    def loss(self,y):#要求输入y为行向量
+    def loss(self,y):#要求输入y为列向量
         return ((y-self.x2_sigmoid)**2).sum()
     def F_m(self,x):
         derivate_matrix=np.zeros((len(x),len(x)))
